@@ -1,7 +1,6 @@
 .container{
     width: 100%; 
     height: 80px;
-    margin: 0 auto;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -46,26 +45,24 @@ header{
 }
 ul{
     display:flex;
-    text-decoration: none;
     width: 400px;
     height: 50px;
     margin-right: 20px;
     justify-content: space-between;
     align-items: center;
-    text-decoration: none;
 }
 .opções li{
     text-transform:uppercase;
     font-weight: bold;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:black;   
-}
-.opções a:hover{
-    color:white;
+    font-family: Arial, Helvetica, sans-serif;   
 }
 .opções a{
     text-decoration: none;  
+    color:black;
+}
+.opções a:hover{
+    color:white;
 }
 .main{
     background-image: url("https://t3.ftcdn.net/jpg/02/00/12/40/360_F_200124079_6ayr4VU5AhLMfwPaDOxIk6Dgv0JWaCwX.jpg");
@@ -145,23 +142,46 @@ footer{
     margin-bottom:2%;
 }
 
-@media screen and (max-width: 426px){
+@media screen and (max-width: 480px){
 
   .container{
     display:flex;
     flex-direction: column;
-    height: auto;
-    padding-left:1%;
+    padding-left:1%; 
+    height: 150px;
   }
-  
+  .logo{
+      display:none;
+  }
+
   .texto1{
     width:80%;  
     height:auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:10%;
-    
+    padding:10%;  
+  }
+  .opções{
+      width: 100%;
+      height: 150px;
+  }
+  .opções ul{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    height: 100%;  
+  }
+  .opções li{
+    padding-top:3%;
+        
+    font-size:20px;
+    font-weight: bold;
+    font-style: inherit;
+    width: 20%;
+    text-align: center;
   }
   .texto1 p{
       font-size:20px;
@@ -184,7 +204,11 @@ footer{
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      height: auto;      
   }  
+  #imagemc{
+      width: 70%;
+  }
   
   
   }
